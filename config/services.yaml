@@ -1,0 +1,10 @@
+services:
+
+    Ctors\PledgeRoutingBundle\EventListener\UnveilListener:
+        tags:
+            - { name: 'kernel.event_listener', event: 'kernel.controller', method: 'onKernelController' }
+
+    Ctors\PledgeRoutingBundle\EventListener\PledgeListener:
+        tags:
+            - { name: 'kernel.event_listener', event: 'kernel.controller', method: 'onKernelController' }
+
